@@ -7,7 +7,7 @@ from selenium import webdriver
 
 
 def init():
-	chromedriver = "/home/ada/Desktop/chromedriver"
+	chromedriver = "./chromedriver"
 	os.environ["webdriver.chrome.driver"] = chromedriver
 	driver = webdriver.Chrome(chromedriver)
 	url = "https://www.metal-archives.com/lists/" + sys.argv[1]
